@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sunburst Bakery & Brew</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container nav-content">
+      <a href="#" class="logo">☀️ Sunburst<span>Bakery</span></a>
+      <nav class="nav-links">
+        <a href="#about">About Us</a>
+        <a href="#menu">Menu</a>
+        <a href="#visit">Visit</a>
+      </nav>
+      <button class="btn btn-coral" id="openModalBtn">Order / Inquire</button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <span class="badge">Freshly Baked Daily • 6 AM – 6 PM</span>
+        <h1>Brightening Your Morning, One Bite at a Time.</h1>
+        <p>Small-batch sourdough, vibrant seasonal pastries, and locally roasted specialty coffee served with neighborhood warmth.</p>
+        <div class="hero-buttons">
+          <a href="#menu" class="btn btn-navy">Explore Menu</a>
+          <a href="#about" class="btn btn-outline">Our Story</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="sticker">100% Organic Flour</div>
+        <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=80" alt="Freshly baked artisan bread and pastries" />
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-images">
+          <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=700&q=80" alt="Friendly barista pouring coffee" class="about-img-main" />
+          <div class="stat-box">
+            <h3>12+ Years</h3>
+            <p>Serving our local community with love & butter.</p>
+          </div>
+        </div>
+        <div class="about-content">
+          <span class="section-tag">About Us</span>
+          <h2>Baked from Scratch, Rooted in Community</h2>
+          <p>Started in 2014 by two lifelong friends with a single deck oven and a passion for fermentation, Sunburst Bakery & Brew has grown into the neighborhood's favorite gathering spot.</p>
+          <p>We partner directly with regional grain farmers and local dairy producers to ensure every croissant, loaf, and latte bursts with real flavor.</p>
+          
+          <div class="values-grid">
+            <div class="value-card bg-yellow">
+              <h4>🌾 Local Grains</h4>
+              <p>Stone-milled flour sourced within 50 miles.</p>
+            </div>
+            <div class="value-card bg-teal">
+              <h4>☕ Fair Trade Brew</h4>
+              <p>Ethically sourced beans roasted in-house weekly.</p>
+            </div>
+            <div class="value-card bg-coral-light">
+              <h4>💛 Zero Waste</h4>
+              <p>Unsold loaves donated daily to local shelters.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section id="menu" class="menu-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Daily Specials</span>
+        <h2>Our Colorful Favorites</h2>
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="pastries">Pastries</button>
+          <button class="filter-btn" data-filter="bread">Artisan Bread</button>
+          <button class="filter-btn" data-filter="drinks">Coffee & Drinks</button>
+        </div>
+      </div>
+
+      <div class="menu-grid" id="menuGrid">
+        <div class="menu-item" data-category="pastries">
+          <div class="item-top">
+            <span class="pill pill-coral">Pastry</span>
+            <span class="price">$4.50</span>
+          </div>
+          <h3>Mango Passionfruit Cruffin</h3>
+          <p>Flaky laminated brioche filled with tangy tropical curd and rolled in citrus sugar.</p>
+        </div>
+
+        <div class="menu-item" data-category="bread">
+          <div class="item-top">
+            <span class="pill pill-teal">Bread</span>
+            <span class="price">$8.00</span>
+          </div>
+          <h3>Rosemary Sea Salt Sourdough</h3>
+          <p>36-hour naturally leavened country loaf with crispy blistered crust.</p>
+        </div>
+
+        <div class="menu-item" data-category="drinks">
+          <div class="item-top">
+            <span class="pill pill-yellow">Drink</span>
+            <span class="price">$5.25</span>
+          </div>
+          <h3>Iced Honey Cinnamon Latte</h3>
+          <p>Double shot espresso shaken with wildflower honey, oat milk, and Ceylon cinnamon.</p>
+        </div>
+
+        <div class="menu-item" data-category="pastries">
+          <div class="item-top">
+            <span class="pill pill-coral">Pastry</span>
+            <span class="price">$4.75</span>
+          </div>
+          <h3>Pistachio Rose Croissant</h3>
+          <p>Twice-baked butter croissant stuffed with roasted pistachio frangipane.</p>
+        </div>
+
+        <div class="menu-item" data-category="drinks">
+          <div class="item-top">
+            <span class="pill pill-yellow">Drink</span>
+            <span class="price">$4.95</span>
+          </div>
+          <h3>Hibiscus Berry Fizz</h3>
+          <p>House-brewed hibiscus tea topped with sparkling water and fresh mint.</p>
+        </div>
+
+        <div class="menu-item" data-category="bread">
+          <div class="item-top">
+            <span class="pill pill-teal">Bread</span>
+            <span class="price">$7.50</span>
+          </div>
+          <h3>Sun-Dried Tomato Focaccia</h3>
+          <p>Pillowy olive oil bread topped with sweet tomatoes, basil, and garlic.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Visit / Footer Section -->
+  <footer id="visit" class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="#" class="logo footer-logo">☀️ Sunburst<span>Bakery</span></a>
+        <p>124 Sunshine Avenue, Downtown District<br>Open Mon–Sun: 6:00 AM – 6:00 PM</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>hello@sunburstbakery.local<br>(555) 234-5678</p>
+      </div>
+      <div>
+        <h4>Catering & Custom Cakes</h4>
+        <p>Planning an event? Click below to send us a quick inquiry.</p>
+        <button class="btn btn-yellow" id="footerModalBtn">Get in Touch</button>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Sunburst Bakery & Brew. Made fresh every morning.</p>
+    </div>
+  </footer>
+
+  <!-- Interactive Modal -->
+  <div class="modal-overlay" id="inquiryModal">
+    <div class="modal-box">
+      <button class="close-btn" id="closeModalBtn">&times;</button>
+      <h2>Send an Order or Inquiry</h2>
+      <p>Need a custom cake, catering box, or table reservation? Let us know!</p>
+      <form id="inquiryForm">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <select required>
+          <option value="">Select Inquiry Type</option>
+          <option value="pickup">Pre-Order Pickup</option>
+          <option value="catering">Event Catering</option>
+          <option value="cake">Custom Cake</option>
+        </select>
+        <textarea rows="3" placeholder="Tell us what you're craving..." required></textarea>
+        <button type="submit" class="btn btn-coral full-width">Send Message</button>
+      </form>
+      <div id="formSuccess" class="success-msg hidden">
+        🎉 Thanks! We received your note and will reply within 2 hours.
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
